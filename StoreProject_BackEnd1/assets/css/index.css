@@ -1,0 +1,73 @@
+.text-right {
+    text-align: right;
+}
+
+.dropdown {
+    text-align: right;
+}
+
+.product-menu {
+    background-color: #F7F7F7;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+.btn-view {
+    border-bottom: 2px solid #dcdcdc;
+    width: 36px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+    vertical-align: middle;
+    margin-right: 3px;
+    z-index: 1;
+    background: #fff;
+}
+.btn-view:before {
+    box-shadow: 13px 0 #dcdcdc;
+    background: #dcdcdc;
+    content: "";
+    top: 13px;
+    position: absolute;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.btn-view.active:before {
+    background-color: #e97e3d;
+    box-shadow: 13px 0 0 #e97e3d;
+}
+.btn-view-3 {
+    width: 49px
+}
+.btn-view-3:before {
+    box-shadow: 13px 0 #dcdcdc, 26px 0 #dcdcdc;
+}
+.btn-view-3.active:before {
+    box-shadow: 13px 0 #e97e3d, 26px 0 #e97e3d;
+}
+.btn-view.active {
+    border-color: #e97e3d;
+    z-index: 2;
+}
+.btn-view-4 {
+    width: 62px;
+}
+.btn-view-4:before {
+    box-shadow: 13px 0 #dcdcdc, 26px 0 #dcdcdc, 39px 0 #dcdcdc;
+}
+.btn-view-4.active:before {
+    box-shadow: 13px 0 #e97e3d, 26px 0 #e97e3d, 39px 0 #e97e3d;
+}
+@media (max-width: 991px) {
+    .category-heading {
+        display: block !important;
+    }
+    .product-menu {
+        display: none;   
+    }
+}
