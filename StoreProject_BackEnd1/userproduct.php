@@ -818,30 +818,7 @@ $productStar = $productModel->getAverageRating($item['id']);
                     <div class="product-meta">
                         <h1 class="product-title"><?php echo $item['product_name'] ?></h1>
                         <div class="review" data-id="<?php echo $item['id']; ?>">
-                            <!-- Thanh sao trung bình -->
-                            <div class="average-rating">
-                                <span class="star-list">
-                                    <?php
-                                    $rating = $item['product_star'];
-                                    $fullStars = floor($rating);
-                                    $halfStars = ($rating - $fullStars) >= 0.5 ? 1 : 0;
-                                    $emptyStars = 5 - $fullStars - $halfStars;
-
-                                    for ($i = 0; $i < $fullStars; $i++) {
-                                        echo '<i class="fas fa-star star-yellow"></i>';
-                                    }
-                                    if ($halfStars) {
-                                        echo '<i class="fas fa-star-half-alt star-yellow"></i>';
-                                    }
-                                    for ($i = 0; $i < $emptyStars; $i++) {
-                                        echo '<i class="fas fa-star"></i>';
-                                    }
-                                    ?>
-                                </span>
-                                <span class="review-badge">
-                                    <?php echo number_format($productStar, 1) . ' stars'; ?>
-                                </span>
-                            </div>
+                            
 
                             <!-- Thanh sao cá nhân -->
                             <?php if (!$userHasRated): ?>
